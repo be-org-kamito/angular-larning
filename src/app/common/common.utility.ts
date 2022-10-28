@@ -7,7 +7,7 @@ export class CommonUtility {
   /**
    * オブジェクトをシャローコピーする
    */
-  public ShallowCopy(obj: any): any {
-    return JSON.parse(JSON.stringify(obj));
+  public ShallowCopy(ob: any): any {
+    return JSON.parse(JSON.stringify(ob));
   }
 }
