@@ -1,10 +1,38 @@
 <div>
-  <div>元データ</div>
+  <div class="question-header">コレクション関数学習用</div>
+  <div>コレクション関数学習用のページです。</div>
   <div>
-    <span *ngFor="let item of data"> {{ item.name }}, </span>
+    <ul>
+      <li>
+        getDataメソッドにて元データを取得し、それに対して各設問に回答してください。
+      </li>
+      <li>Q1のみヒントがあります。</li>
+      <li>必要に応じて変数、メソッドを実装してください。</li>
+      <li>表示用HTML、CSSは問いません。</li>
+    </ul>
   </div>
-  <div>Q1.Map関数を使ってnameの文字列を"★"で囲んでください。</div>
-  <div>
-    <span *ngFor="let item of dataMap"> {{ item.name }}, </span>
+  <div class="question-grid">
+    <div class="question-headline">例題. 元データを表示してください。</div>
+    <div class="answer-block">
+      <span *ngFor="let item of data"> {{ item.name }}, </span>
+    </div>
+    <div class="question-headline">
+      Q1. Map関数を使ってnameの文字列を"★"で囲んだものを表示してください。
+    </div>
+    <div class="answer-block">
+      <span *ngFor="let item of dataMap"> {{ item.name }} </span>
+    </div>
+    <div class="question-headline">
+      Q2. filter関数を使ってscoreが50以上のデータを表示してください。
+    </div>
+    <div class="answer-block"></div>
+    <div class="question-headline">
+      Q3. find関数を使って、dataTypeが1である初めのデータを表示してください。
+    </div>
+    <div class="answer-block"></div>
+    <div class="question-headline">
+      Q4. scoreが50～60かつ、dataTypeが2であるデータを表示してください。
+    </div>
+    <div class="answer-block"></div>
   </div>
 </div>

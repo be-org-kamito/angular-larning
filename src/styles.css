@@ -1,1 +1,24 @@
 /* Add application styles & imports to this file! */
+.header-nav a {
+  padding: 0px 5px 0px 5px;
+}
+
+div.question-header {
+  border: solid 1px brown;
+}
+
+.question-grid {
+  display: grid;
+}
+
+.question-headline {
+  border: dotted skyblue;
+  margin: 10px;
+  padding: 5px;
+}
+
+.answer-block {
+  border: solid 1px lightsalmon;
+  margin: 10px;
+  padding: 5px;
+}

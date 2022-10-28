@@ -1,1 +1,16 @@
-<div>ライフサイクル～</div>
+<div class="question-header">ライフサイクル学習用</div>
+<div>ライフサイクル学習用のページです。</div>
+<div class="question-grid">
+  <div class="question-headline">
+    Q.
+    ライフサイクルフックを使用し、そのタイミングで配列「data」へライフサイクルフックメソッド名を追加してください。<br />
+    ※タイミングによって実行されないものもあるので、表示されない場合があります。
+  </div>
+  <div class="answer-block">
+    <ul>
+      <li *ngFor="let item of data">
+        {{ item }}
+      </li>
+    </ul>
+  </div>
+</div>

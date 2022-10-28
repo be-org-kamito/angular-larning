@@ -5,4 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './lifecycle.component.html',
   styles: [],
 })
-export class LifecycleComponent {}
+export class LifecycleComponent {
+  public data: string[] = [];
+
+  ngOnChanges() {
+    this.data.push('ngOnChanges');
+  }
+
+  ngOnInit() {
+    this.data.push('ngOnInit');
+  }
+}

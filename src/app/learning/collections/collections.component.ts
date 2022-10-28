@@ -30,12 +30,21 @@ export class CollectionsComponent {
     this.setDataMap();
   }
 
-  /** 元データ取得メソッド */
+  /**
+   * 元データコピーメソッド
+   *
+   */
   private getData(): DataModel[] {
     const ret: DataModel[] = this.util.ShallowCopy(this.data);
     return ret;
   }
 
   /** データマップ */
-  private setDataMap(): void {}
+  private setDataMap(): void {
+    const data: DataModel[] = this.getData();
+    const result: DataModel[] = data.map((item: DataModel) => {
+      return item;
+    });
+    // this.dataMap = result;
+  }
 }
