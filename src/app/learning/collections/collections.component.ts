@@ -1,12 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonUtility } from '../../common/common.utility';
 import { DataModel } from './collections.model';
 
 @Component({
   selector: 'collections',
   templateUrl: './collections.component.html',
-  styles: [`h1 { font-family: Lato; }`],
+  styles: [],
 })
 export class CollectionsComponent {
+  private util: CommonUtility = new CommonUtility();
   // 元データ
   public data: DataModel[];
   // Map格納用
@@ -28,12 +30,12 @@ export class CollectionsComponent {
   }
 
   ngAfterViewInit() {
-    this.setDataMap();99
+    this.setDataMap();
   }
 
   /** 元データ取得メソッド */
   private getData(): DataModel[] {
-    return JSON.parse(JSON.stringify(this.data));
+    return this.util.ShallowCopy(this.data);
   }
 
   private setDataMap(): void {
