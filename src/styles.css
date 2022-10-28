@@ -6,9 +6,11 @@
 .question-header {
   border: solid 1px brown;
 }
+
 .explanation-block {
   padding: 0%;
 }
+
 .explanation-block > h2 {
   background-color: lightskyblue;
 }
