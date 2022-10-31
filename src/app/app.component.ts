@@ -25,7 +25,7 @@ export class AppComponent {
       { link: '/ternaryOperator', label: '三項演算子' },
       { link: '/larningComponent', label: 'コンポーネント' },
       { link: '/funcExpression', label: '無名関数' },
-      { link: '/dependencyInjection', label: 'DI（依存性注入）' },
+      // { link: '/dependencyInjection', label: 'DI（依存性注入）' },
     ];
   }
 }
