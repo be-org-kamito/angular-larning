@@ -11,6 +11,8 @@ import { DeclarationComponent } from './learning/declaration/declaration.compone
 import { ConstructorPageComponent } from './learning/constructorPage/constructorPage.component';
 import { InOutDecoratorComponent } from './learning/inOutDecorator/inOutDecorator.component';
 import { InOutDecoratorChildComponent } from './learning/inOutDecorator/inOutDecoratorChild.component';
+import { VChildDecoratorComponent } from './learning/vChildDecorator/vChildDecorator.component';
+import { VChildDecoratorChildComponent } from './learning/vChildDecorator/vChildDecoratorChild.component';
 
 const routes: Routes = [
   // 更新
@@ -20,6 +22,7 @@ const routes: Routes = [
   { path: 'declaration', component: DeclarationComponent },
   { path: 'constructorPage', component: ConstructorPageComponent },
   { path: 'inOutDecorator', component: InOutDecoratorComponent },
+  { path: 'vChildDecorator', component: VChildDecoratorComponent },
 ];
 
 @NgModule({
@@ -33,6 +36,8 @@ const routes: Routes = [
     ConstructorPageComponent,
     InOutDecoratorComponent,
     InOutDecoratorChildComponent,
+    VChildDecoratorComponent,
+    VChildDecoratorChildComponent,
   ],
   bootstrap: [AppComponent],
   exports: [RouterModule],
