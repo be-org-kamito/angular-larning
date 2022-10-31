@@ -1,6 +1,14 @@
 /* Add application styles & imports to this file! */
-.header-nav a {
-  padding: 0px 5px 0px 5px;
+.header-nav {
+  height: 10vh;
+  a {
+    padding: 0px 5px 0px 5px;
+  }
+}
+
+.main-contents {
+  overflow-y: scroll;
+  height: 85vh;
 }
 
 .question-header {

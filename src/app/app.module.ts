@@ -8,12 +8,23 @@ import { TopComponent } from './top.component';
 import { CollectionsComponent } from './learning/collections/collections.component';
 import { LifecycleComponent } from './learning/lifecycle/lifecycle.component';
 import { DeclarationComponent } from './learning/declaration/declaration.component';
+import { ConstructorPageComponent } from './learning/constructorPage/constructorPage.component';
+import { InOutDecoratorComponent } from './learning/inOutDecorator/inOutDecorator.component';
+import { InOutDecoratorChildComponent } from './learning/inOutDecorator/inOutDecoratorChild.component';
+import { VChildDecoratorComponent } from './learning/vChildDecorator/vChildDecorator.component';
+import { VChildDecoratorChildComponent } from './learning/vChildDecorator/vChildDecoratorChild.component';
+import { TernaryOperatorComponent } from './learning/ternaryOperator/ternaryOperator.component';
+
 const routes: Routes = [
   // 更新
   { path: '', component: TopComponent },
   { path: 'collections', component: CollectionsComponent },
   { path: 'lifecycle', component: LifecycleComponent },
   { path: 'declaration', component: DeclarationComponent },
+  { path: 'constructorPage', component: ConstructorPageComponent },
+  { path: 'inOutDecorator', component: InOutDecoratorComponent },
+  { path: 'vChildDecorator', component: VChildDecoratorComponent },
+  { path: 'ternaryOperator', component: TernaryOperatorComponent },
 ];
 
 @NgModule({
@@ -24,6 +35,12 @@ const routes: Routes = [
     LifecycleComponent,
     CollectionsComponent,
     DeclarationComponent,
+    ConstructorPageComponent,
+    InOutDecoratorComponent,
+    InOutDecoratorChildComponent,
+    VChildDecoratorComponent,
+    VChildDecoratorChildComponent,
+    TernaryOperatorComponent,
   ],
   bootstrap: [AppComponent],
   exports: [RouterModule],
