@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'collections', component: CollectionsComponent },
   { path: 'lifecycle', component: LifecycleComponent },
   { path: 'declaration', component: DeclarationComponent },
-  { path: 'constructor', component: ConstructorPageComponent },
+  { path: 'constructorPage', component: ConstructorPageComponent },
 ];
 
 @NgModule({

@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './constructorPage.component.html',
   styles: [],
 })
-export class ConstructorPageComponent {}
+export class ConstructorPageComponent {
+  public dispString: string = '初期表示';
+}
