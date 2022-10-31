@@ -9,6 +9,9 @@ import { CollectionsComponent } from './learning/collections/collections.compone
 import { LifecycleComponent } from './learning/lifecycle/lifecycle.component';
 import { DeclarationComponent } from './learning/declaration/declaration.component';
 import { ConstructorPageComponent } from './learning/constructorPage/constructorPage.component';
+import { InOutDecoratorComponent } from './learning/inOutDecorator/inOutDecorator.component';
+import { InOutDecoratorChildComponent } from './learning/inOutDecorator/inOutDecoratorChild.component';
+
 const routes: Routes = [
   // 更新
   { path: '', component: TopComponent },
@@ -16,6 +19,7 @@ const routes: Routes = [
   { path: 'lifecycle', component: LifecycleComponent },
   { path: 'declaration', component: DeclarationComponent },
   { path: 'constructorPage', component: ConstructorPageComponent },
+  { path: 'inOutDecorator', component: InOutDecoratorComponent },
 ];
 
 @NgModule({
@@ -27,6 +31,8 @@ const routes: Routes = [
     CollectionsComponent,
     DeclarationComponent,
     ConstructorPageComponent,
+    InOutDecoratorComponent,
+    InOutDecoratorChildComponent,
   ],
   bootstrap: [AppComponent],
   exports: [RouterModule],
