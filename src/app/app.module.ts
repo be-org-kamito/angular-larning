@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { TopComponent } from './top.component';
 import { CollectionsComponent } from './learning/collections/collections.component';
 import { LifecycleComponent } from './learning/lifecycle/lifecycle.component';
+import { DeclarationComponent } from './learning/declaration/declaration.component';
 const routes: Routes = [
   // 更新
   { path: '', component: TopComponent },
   { path: 'collections', component: CollectionsComponent },
   { path: 'lifecycle', component: LifecycleComponent },
+  { path: 'declaration', component: DeclarationComponent },
 ];
 
 @NgModule({
@@ -21,6 +23,7 @@ const routes: Routes = [
     TopComponent,
     LifecycleComponent,
     CollectionsComponent,
+    DeclarationComponent,
   ],
   bootstrap: [AppComponent],
   exports: [RouterModule],

@@ -1,16 +1,36 @@
-<div class="question-header">ライフサイクル学習用</div>
-<div>ライフサイクル学習用のページです。</div>
-<div class="question-grid">
-  <div class="question-headline">
-    Q.
-    ライフサイクルフックを使用し、そのタイミングで配列「data」へライフサイクルフックメソッド名を追加してください。<br />
-    ※タイミングによって実行されないものもあるので、表示されない場合があります。
-  </div>
-  <div class="answer-block">
+<div>
+  <h1 class="question-header">ライフサイクル学習用</h1>
+  <div class="explanation-block">
+    <h2>■ライフサイクルとは</h2>
+    <p>
+      フレームワークで定義された、コンポーネントを描画する際に自動で実行される関数です。
+    </p>
+    <p>
+      スクリプト上に記述することで、ライフサイクルに応じたタイミングで処理を実行することができます。
+    </p>
+    <p>このことをライフサイクルフックと呼びます。</p>
+    <h3>どういう場面で使用するか？</h3>
+    <div>よく使われているライフサイクル</div>
     <ul>
-      <li *ngFor="let item of data">
-        {{ item }}
-      </li>
+      <li>ngOnInit：コンポーネントが初期化されたタイミング</li>
+      <li>ngAfterViewInit：コンポーネント初期化後</li>
+      <li>ngOnDestroy：コンポーネントが破棄されるタイミング</li>
     </ul>
+    <h3>概要</h3>
+    <h3>参考URL</h3>
+  </div>
+  <div class="question-grid">
+    <div class="question-headline">
+      Q.
+      ライフサイクルフックを使用し、そのタイミングで配列「data」へライフサイクルフックメソッド名を追加してください。<br />
+      ※タイミングによって実行されないものもあるので、表示されない場合があります。
+    </div>
+    <div class="answer-block">
+      <ul>
+        <li *ngFor="let item of data">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
