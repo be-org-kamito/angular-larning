@@ -14,6 +14,7 @@ import { InOutDecoratorChildComponent } from './learning/inOutDecorator/inOutDec
 import { VChildDecoratorComponent } from './learning/vChildDecorator/vChildDecorator.component';
 import { VChildDecoratorChildComponent } from './learning/vChildDecorator/vChildDecoratorChild.component';
 import { TernaryOperatorComponent } from './learning/ternaryOperator/ternaryOperator.component';
+import { LarningComponentComponent } from './learning/larningComponent/larningComponent.component';
 
 const routes: Routes = [
   // 更新
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'inOutDecorator', component: InOutDecoratorComponent },
   { path: 'vChildDecorator', component: VChildDecoratorComponent },
   { path: 'ternaryOperator', component: TernaryOperatorComponent },
+  { path: 'larningComponent', component: LarningComponentComponent },
 ];
 
 @NgModule({
@@ -41,6 +43,7 @@ const routes: Routes = [
     VChildDecoratorComponent,
     VChildDecoratorChildComponent,
     TernaryOperatorComponent,
+    LarningComponentComponent,
   ],
   bootstrap: [AppComponent],
   exports: [RouterModule],
