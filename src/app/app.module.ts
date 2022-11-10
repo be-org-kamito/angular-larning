@@ -16,6 +16,7 @@ import { VChildDecoratorChildComponent } from './learning/vChildDecorator/vChild
 import { TernaryOperatorComponent } from './learning/ternaryOperator/ternaryOperator.component';
 import { LarningComponentComponent } from './learning/larningComponent/larningComponent.component';
 import { FuncExpressionComponent } from './learning/funcExpression/funcExpression.component';
+import { BindingComponent } from './learning/binding/binding.component';
 import { DependencyInjectionComponent } from './learning/dependencyInjection/dependencyInjection.component';
 
 const routes: Routes = [
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'larningComponent', component: LarningComponentComponent },
   { path: 'funcExpression', component: FuncExpressionComponent },
   { path: 'dependencyInjection', component: DependencyInjectionComponent },
+  { path: 'binding', component: BindingComponent },
 ];
 
 @NgModule({
@@ -50,6 +52,7 @@ const routes: Routes = [
     LarningComponentComponent,
     FuncExpressionComponent,
     DependencyInjectionComponent,
+    BindingComponent,
   ],
   bootstrap: [AppComponent],
   exports: [RouterModule],
