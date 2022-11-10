@@ -1,0 +1,49 @@
+<div>
+  <h1 class="question-header">イベントバインディング学習用</h1>
+  <div class="explanation-block">
+    <h2>■イベントバインディングとは</h2>
+    <p>
+      ボタンクリック、マウスホバーなどのマウス・キー操作に応じて実行したい処理を簡単に記述する仕組みです。
+    </p>
+    <h3>概要</h3>
+    <button (click)="onClickExample()">
+      クリックするとメッセージが表示されます。
+    </button>
+
+    <h3>参考URL</h3>
+    <div>
+      <a
+        href="https://atmarkit.itmedia.co.jp/ait/articles/1707/06/news135.html"
+        target="_blank"
+        >Angularで「イベントハンドラー」を登録するには？（Event Binding）</a
+      >
+    </div>
+    <div>
+      <a
+        href="https://qiita.com/syantien/items/333b435e4a6f8ba449de"
+        target="_blank"
+        >[Angular] 入門 - 基本編 2 - データバインディング 2</a
+      >
+    </div>
+  </div>
+  <h2>設問.</h2>
+  <div class="question-grid">
+    <div class="question-headline">
+      Q1.クリックした際にalertを表示するボタンを作成してください。（表示文言は任意）
+    </div>
+    <div class="answer-block"></div>
+    <div class="question-headline">
+      <p>Q2.文字を入力した際に定義済み変数「questionString」に</p>
+      <p>入力した文字を代入するinput textを作成してください。</p>
+    </div>
+
+    <div class="answer-block">
+      <div>↓このエリアに「questionString」が表示されます。↓</div>
+      <div>{{ questionString }}</div>
+    </div>
+    <div class="question-headline">
+      Q3.定義済み変数「questionString」を表示するボタンを作成してください。
+    </div>
+    <div class="answer-block"></div>
+  </div>
+</div>

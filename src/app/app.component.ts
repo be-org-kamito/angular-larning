@@ -6,7 +6,6 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular ' + VERSION.major;
   links: any[];
 
   constructor() {
@@ -25,6 +24,7 @@ export class AppComponent {
       { link: '/ternaryOperator', label: '三項演算子' },
       { link: '/larningComponent', label: 'コンポーネント' },
       { link: '/funcExpression', label: '無名関数' },
+      { link: '/binding', label: 'イベントバインディング' },
       // { link: '/dependencyInjection', label: 'DI（依存性注入）' },
     ];
   }
