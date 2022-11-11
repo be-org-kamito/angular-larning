@@ -23,6 +23,7 @@ export class AppComponent {
       { link: '/vChildDecorator', label: '@ViewChild' },
       { link: '/ternaryOperator', label: '三項演算子' },
       { link: '/larningComponent', label: 'コンポーネント' },
+      { link: '/larningModel', label: 'モデルクラス' },
       { link: '/funcExpression', label: '無名関数' },
       { link: '/binding', label: 'イベントバインディング' },
       // { link: '/dependencyInjection', label: 'DI（依存性注入）' },

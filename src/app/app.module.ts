@@ -15,6 +15,7 @@ import { VChildDecoratorComponent } from './learning/vChildDecorator/vChildDecor
 import { VChildDecoratorChildComponent } from './learning/vChildDecorator/vChildDecoratorChild.component';
 import { TernaryOperatorComponent } from './learning/ternaryOperator/ternaryOperator.component';
 import { LarningComponentComponent } from './learning/larningComponent/larningComponent.component';
+import { LarningModelComponent } from './learning/larningModel/larning-model.component';
 import { FuncExpressionComponent } from './learning/funcExpression/funcExpression.component';
 import { BindingComponent } from './learning/binding/binding.component';
 import { DependencyInjectionComponent } from './learning/dependencyInjection/dependencyInjection.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'vChildDecorator', component: VChildDecoratorComponent },
   { path: 'ternaryOperator', component: TernaryOperatorComponent },
   { path: 'larningComponent', component: LarningComponentComponent },
+  { path: 'larningModel', component: LarningModelComponent },
   { path: 'funcExpression', component: FuncExpressionComponent },
   { path: 'dependencyInjection', component: DependencyInjectionComponent },
   { path: 'binding', component: BindingComponent },
@@ -50,6 +52,7 @@ const routes: Routes = [
     VChildDecoratorChildComponent,
     TernaryOperatorComponent,
     LarningComponentComponent,
+    LarningModelComponent,
     FuncExpressionComponent,
     DependencyInjectionComponent,
     BindingComponent,
